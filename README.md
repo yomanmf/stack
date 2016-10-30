@@ -3,7 +3,7 @@ Stack implementation in JavaScript
 
 # How to develop
 ```bash
-git clone git@github.com:yomanmf/party-stack.git
+git clone git@github.com:yomanmf/stack.git
 cd stack.git
 npm install
 ```
