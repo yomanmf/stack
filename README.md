@@ -4,7 +4,7 @@ Stack implementation in JavaScript
 # How to develop
 ```bash
 git clone git@github.com:yomanmf/stack.git
-cd stack.git
+cd ../stack.git
 npm install
 ```
 
