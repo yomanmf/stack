@@ -1,3 +1,4 @@
+![Tests](https://travis-ci.org/yomanmf/stack.svg?branch=master)
 # Stack
 Stack implementation in JavaScript
 
