@@ -1,4 +1,4 @@
-# stack
+# Stack
 Stack implementation in JavaScript
 
 # How to develop
