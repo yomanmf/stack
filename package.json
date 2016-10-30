@@ -1,0 +1,14 @@
+{
+  "name": "party-stack",
+  "version": "0.0.1",
+  "description": "Stack in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test.spec.js"
+  },
+  "author": "Alexander Savelyev",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
