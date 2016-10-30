@@ -1,4 +1,4 @@
-# party-stack
+# stack
 Stack implementation in JavaScript
 
 # How to develop
