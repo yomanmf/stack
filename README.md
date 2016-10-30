@@ -10,7 +10,9 @@ npm install
 
 # API
 ```javascript
-const stack = new Stack;
+const stack = new Stack();
+const Stack = require('stack');
+
 stack.push(value) - add a new element to stack
 stack.pop() - remove first element from stack and return value
 stack.peek() - return first element
