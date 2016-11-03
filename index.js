@@ -11,14 +11,14 @@ class Stack {
   }
 
   pop() {
-    if (stack.length === 0) {
+    if (!stack.length) {
       console.error('The stack is empty');
     }
     else return this.stack.remove(0);
   }
 
   peek() {
-    if (this.stack.length === 0) {
+    if (!this.stack.length) {
       console.error('The stack is empty');
     }
     else return this.stack[0];
