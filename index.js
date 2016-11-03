@@ -3,7 +3,7 @@
 class Stack {
 
   constructor() {
-    const stack = new Array;
+    const stack = [];
   }
 
   push(value) {
