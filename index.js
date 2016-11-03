@@ -7,26 +7,27 @@ class Stack {
   }
 
   push(value) {
-    (this.stack).push(value);
+    this.stack.push(value);
   }
 
   pop() {
     if (stack.length === 0) {
       console.error('The stack is empty');
     }
-    else return (this.stack).remove(0);
+    else return this.stack.remove(0);
   }
 
   peek() {
-    if ((this.stack).length === 0) {
+    if (this.stack.length === 0) {
       console.error('The stack is empty');
     }
-    else return (this.stack)[0];
+    else return this.stack[0];
   }
 
   isEmpty() {
-    return (this.stack).length === 0;
+    return this.stack.length === 0;
   }
+
 }
 
 module.exports = Stack;
