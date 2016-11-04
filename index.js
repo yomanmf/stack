@@ -22,7 +22,7 @@ class Stack {
     }
     else {
       return {
-        this.stack.remove(0);
+        this.stack.shift;
       }
     }
   }
