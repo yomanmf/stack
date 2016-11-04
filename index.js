@@ -29,7 +29,7 @@ class Stack {
 
   peek() {
     if (!this.stack.length) {
-      console.error('The stack is empty');
+      throw new Error('The stack is empty');
     }
     else {
       return this.stack[0];
