@@ -1,4 +1,4 @@
-![Tests](https://travis-ci.org/yomanmf/stack.svg?branch=master)[![codecov](https://codecov.io/gh/yomanmf/stack/branch/master/graph/badge.svg)](https://codecov.io/gh/yomanmf/stack)
+![Tests](https://travis-ci.org/yomanmf/stack.svg?branch=master)
 # Stack
 Stack implementation in JavaScript
 
