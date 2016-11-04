@@ -25,5 +25,6 @@ stack.peek()
 
 //Returns  true|false in case if there is an element in stack
 stack.isEmpty() 
-```
+
 ![Current status](http://i1.kym-cdn.com/photos/images/original/000/234/739/fa5.jpg)
+```
