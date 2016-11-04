@@ -12,10 +12,8 @@
     "mocha": "^3.1.2",
     "eslint": "^3.7.1"
   }
-  "repository": [
-    {
-      "type": "git",
-      "url": "https://github.com/yomanmf/stack/"
-    }
-  ],  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yomanmf/stack.git"
+  }, 
 }
