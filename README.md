@@ -14,16 +14,16 @@ npm install
 const stack = new Stack();
 const Stack = require('stack');
 
-//Add a new element to stack
+//Добавить новый элемент в стек
 stack.push(value)
 
-//Remove first element from stack and return value
+//Удалить первый элемент в стеке и вернуть его значение
 stack.pop()
 
-//Return first element
+//Вернуть первый элемент стека
 stack.peek()
 
-//Returns  true|false in case if there is an element in stack
+// Возвращает true|false в зависимости от того, пустой ли стек
 stack.isEmpty() 
 ```
 ![Current status](http://i1.kym-cdn.com/photos/images/original/000/234/739/fa5.jpg)

@@ -4,7 +4,7 @@ class Stack {
 
 /**
  * @constructor Stack
- * @summary Creates an empty array
+ * @summary Создает пустой массив
  */
 
   constructor(stack) {
