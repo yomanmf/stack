@@ -39,7 +39,7 @@ class Stack {
 
   pop() {
     this.isEmpty;
-      return this.stack.shift;
+    return this.stack.shift;
   }
 
 /**
@@ -51,13 +51,9 @@ class Stack {
  */
 
   peek() {
-    if (!this.stack.length) {
-      throw new Error('The stack is empty');
-    }
-    else {
-      return this.stack[0];
-    }
-  }
+    this.isEmpty;
+    return this.stack[0];  
+}
 
 /**
  * Checks if stack is empty
