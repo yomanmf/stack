@@ -1,10 +1,12 @@
 'use strict';
 
+const assert = require('assert');
+
 class Stack {
 
 /**
  * @constructor Stack
- * @summary Создает пустой массив
+ * @summary Creates an empty array
  */
 
   constructor(stack) {
@@ -16,14 +18,8 @@ class Stack {
   }
 
   pop() {
-    if (!stack.length) {
-      console.error('The stack is empty');
-    }
-    else {
-      return {
-        this.stack.shift;
-      }
-    }
+    this.isEmpty;
+      return this.stack.shift;
   }
 
   peek() {
@@ -36,9 +32,7 @@ class Stack {
   }
 
   isEmpty() {
-    return {
-      this.stack.length === 0;
-    }
+    assert(this.stack[0], 'The stack is empty');
   }
 
 }

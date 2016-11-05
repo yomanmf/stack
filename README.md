@@ -11,19 +11,20 @@ npm install
 
 # API
 ```javascript
+//Stack initialization
 const stack = new Stack();
 const Stack = require('stack');
 
-//Добавить новый элемент в стек
+//Add a new element to stack
 stack.push(value)
 
-//Удалить первый элемент в стеке и вернуть его значение
+//Remove first element from stack and return value
 stack.pop()
 
-//Вернуть первый элемент стека
+//Return first element
 stack.peek()
 
-// Возвращает true|false в зависимости от того, пустой ли стек
+//Returns  true|false in case if there is an element in stack
 stack.isEmpty() 
 ```
 ![Current status](http://i1.kym-cdn.com/photos/images/original/000/234/739/fa5.jpg)
