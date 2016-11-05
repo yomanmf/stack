@@ -9,7 +9,7 @@ class Stack {
  */
 
   constructor() {
-    const stack = [];
+    this.stack = [];
   }
 
   push(value) {
