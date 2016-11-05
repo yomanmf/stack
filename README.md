@@ -9,22 +9,23 @@ cd stack
 npm install
 ```
 
+# How to run tests
+```bash
+npm tests
+```
+
 # API
 ```javascript
-//Stack initialization
+//Initialization
 const stack = new Stack();
 const Stack = require('stack');
 
-//Add a new element to stack
-stack.push(value)
+stack.push(100500) // returns 100500
 
-//Remove first element from stack and return value
-stack.pop()
+stack.pop() // removes the first element and returns its' value
 
-//Return first element
-stack.peek()
+stack.peek() // returns first element
 
-//Returns  true|false in case if there is an element in stack
-stack.isEmpty() 
+stack.isEmpty() //Returns  true|false in case if there is an element in stack
 ```
 ![Current status](http://i1.kym-cdn.com/photos/images/original/000/234/739/fa5.jpg)
