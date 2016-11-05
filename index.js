@@ -5,7 +5,6 @@ class Stack {
 /**
  * @constructor Stack
  * @summary Creates an empty array
- * @example To be added soon
  */
 
   constructor(stack) {
