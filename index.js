@@ -8,7 +8,7 @@ class Stack {
  * @example To be added soon
  */
 
-  constructor() {
+  constructor(stack) {
     this.stack = [];
   }
 
