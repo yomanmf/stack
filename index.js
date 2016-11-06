@@ -38,7 +38,7 @@ class Stack {
  */
 
   pop() {
-    this.isEmpty;
+    this.stack.isEmpty;
     return this.stack.shift;
   }
 
@@ -51,7 +51,7 @@ class Stack {
  */
 
   peek() {
-    this.isEmpty;
+    this.stack.isEmpty;
     return this.stack[0];  
 }
 
