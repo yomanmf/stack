@@ -27,6 +27,11 @@ describe('Check type of every function', function () {
         const stack = new Stack;
         assert.strictEqual(typeof stack.isEmpty, 'function', 'stack.isEmpty is not a function');
     });
+
+    it('stack.isEmptyAssert should use expected API', function() { 
+        const stack = new Stack;
+        assert.strictEqual(typeof stack.isEmptyAssert, 'function', 'stack.isEmptyAssert is not a function');
+    });
 });
     
 describe('push() testsuite', function () {
