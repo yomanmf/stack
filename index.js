@@ -11,7 +11,7 @@ class Stack {
  * @this {Stack}
  */
 
-  constructor(stack) {
+  constructor() {
     this.stack = [];
   }
 
@@ -69,5 +69,9 @@ class Stack {
   }
 
 }
+
+        const stack = new Stack;
+        stack.push(123);
+        console.log(stack[0]);
 
 module.exports = Stack;

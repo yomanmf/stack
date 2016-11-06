@@ -3,7 +3,7 @@
 const assert = require('assert');
 const Stack = require('./index.js');
 
-describe('Stack testsuite', function () {
+describe('Common testsuite', function () {
     it('should use expected API', function() {
         assert.strictEqual(typeof Stack, 'function', 'Stack is not a function');
         
@@ -13,7 +13,9 @@ describe('Stack testsuite', function () {
         assert.strictEqual(typeof stack.peek, 'function', 'stack.peek is not a function');
         assert.strictEqual(typeof stack.isEmpty, 'function', 'stack.isEmpty is not a function');
     });
+});
     
+describe('push() testsuite', function () {
     it('should add items on top of stack with push()', function () {
         const stack = new Stack;
 
@@ -30,8 +32,10 @@ describe('Stack testsuite', function () {
         assert.deepStrictEqual(stack.length, 1, 'stack.length <> 1');
     });
  */
-    
 
+});
+    
+describe('peek() testsuite', function () {
     it('should return the first element in stack with peek()', function() {
         const stack = new Stack;
         stack.push(1);
@@ -39,6 +43,8 @@ describe('Stack testsuite', function () {
 
         assert.deepStrictEqual(stack.peek(), 1);
     })
+});
+
 /**
     it('should remove the first element from stack with pop()', function() {
         const stack = new Stack;
@@ -52,6 +58,7 @@ describe('Stack testsuite', function () {
     });
  */
 
+
 /**
     it('should check if stack is not empty with isEmpty()', function() {
         const stack = new Stack;
@@ -61,5 +68,4 @@ describe('Stack testsuite', function () {
     })
  */
 
-});
 
