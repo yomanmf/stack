@@ -85,7 +85,7 @@ describe('isEmpty() testsuite', function() {
         assert.deepStrictEqual(stack.isEmpty(), true);
     });
 
-        it('should check if stack is empty with isEmpty()', function() {
+    it('should check if stack is empty with isEmpty()', function() {
         const stack = new Stack;
 
         assert.deepStrictEqual(stack.isEmpty(), false);
