@@ -4,13 +4,27 @@ const assert = require('assert');
 const Stack = require('./index.js');
 
 describe('Check type of every function', function () {
-    it('should use expected API', function() {
+    it('stack should use expected API', function() {
         assert.strictEqual(typeof Stack, 'function', 'Stack is not a function');
-        
+    });
+
+    it('stack.push should use expected API', function() {
         const stack = new Stack;
         assert.strictEqual(typeof stack.push, 'function', 'stack.push is not a function');
+    });
+
+    it('stack.pop should use expected API', function() {
+        const stack = new Stack;
         assert.strictEqual(typeof stack.pop, 'function', 'stack.pop is not a function');
+    });
+
+    it('stack.peek should use expected API', function() {
+        const stack = new Stack;
         assert.strictEqual(typeof stack.peek, 'function', 'stack.peek is not a function');
+    });
+
+    it('stack.isEmpty should use expected API', function() { 
+        const stack = new Stack;
         assert.strictEqual(typeof stack.isEmpty, 'function', 'stack.isEmpty is not a function');
     });
 });
@@ -97,14 +111,30 @@ describe('isEmptyAssert() testsuite', function() {
 });
 
 describe('Tests with several elements in stack', function() {
-    it('Every element should be correct', function() {
+    it('First element should be correct', function() {
         const stack = new Stack;
         stack.push(1);
         stack.push(2);
         stack.push(3);
 
         assert.deepStrictEqual(stack.stack[0], 1, 'first element in stack is wrong');
+    });
+
+     it('Second element should be correct', function() {
+        const stack = new Stack;
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
         assert.deepStrictEqual(stack.stack[1], 2, 'second element in stack is wrong');
+    });
+
+     it('Third element should be correct', function() {
+        const stack = new Stack;
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+
         assert.deepStrictEqual(stack.stack[2], 3, 'third element in stack is wrong');
     });
 
