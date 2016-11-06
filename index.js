@@ -38,8 +38,8 @@ class Stack {
  */
 
   pop() {
-    this.stack.isEmpty;
-    return this.stack.shift;
+    this.stack.isEmptyAssert;
+    return this.stack.shift();
   }
 
 /**
@@ -51,7 +51,7 @@ class Stack {
  */
 
   peek() {
-    this.stack.isEmpty;
+    this.stack.isEmptyAssert;
     return this.stack[0];  
 }
 
@@ -65,13 +65,13 @@ class Stack {
  */
 
   isEmpty() {
+    return Boolean(this.stack[0]);
+  }
+
+  isEmptyAssert() {
     assert(this.stack[0], 'The stack is empty');
   }
 
 }
-
-        const stack = new Stack;
-        stack.push(123);
-        console.log(stack[0]);
 
 module.exports = Stack;
