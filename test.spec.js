@@ -21,4 +21,30 @@ describe('Stack testsuite', function () {
             stack.push(1);
         }, 'stack.push() throws instead of adding item on top of stack');
     });
+
+    it('should return the first element in stack with peek()', function() {
+        const stack = new Stack;
+        stack.push(1);
+        stack.peek();
+
+        assert.deepStrictEqual(stack.peek(), 1);
+    })
+
+    it('should remove the first element from stack with pop()', function() {
+        const stack = new Stack;
+
+        assert.doesNotThrow(function () {
+            stack.push(1);
+            stack.pop();
+        }, 'stack.pop() throws instead of adding item on top of stack');
+    });
+
+    it('should check if stack is not empty with isEmpty()', function() {
+        const stack = new Stack;
+        stack.push(1);
+
+        assert.deepStrictEqual(stack.isEmpty(), false);
+    })
+
 });
+

@@ -30,7 +30,7 @@ class Stack {
   }
 
 /**
- * Removes an element from stack
+ * Removes the first element from stack
  * 
  * @function
  * @this {Stack}
