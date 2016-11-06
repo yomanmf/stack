@@ -68,6 +68,14 @@ class Stack {
     return Boolean(this.stack[0]);
   }
 
+/**
+ * Throws if stack is empty
+ * 
+ * @function
+ * @this {Stack}
+ * example stack.isEmptyAssert();
+ */
+
   isEmptyAssert() {
     assert(this.stack[0], 'The stack is empty');
   }
