@@ -11,7 +11,7 @@ class Stack {
    * @this {Stack}
    */
 
-  constructor(stack) {
+  constructor(_stack) {
     this._stack = [];
   }
 
