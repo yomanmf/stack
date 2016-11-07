@@ -72,14 +72,22 @@ describe('pop() testsuite', function () {
             stack.pop();
         }, 'stack.stack.pop() throws instead of adding item on top of stack');
     });
-
+    
     it('should remove the first element from stack with pop()', function() {
         const stack = new Stack;
         stack.push(1);
         stack.pop();
 
         assert.deepStrictEqual(stack.stack.length, 0, 'stack.stack.length <> 0');
-    });     
+    });
+    
+    it('should act like FIFO data structure', function () {
+        const stack = new Stack;
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        assert.structEqual(stack.pop(), 3);
+    });
 });
 
 describe('isEmpty() testsuite', function() {
