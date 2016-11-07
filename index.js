@@ -11,8 +11,8 @@ class Stack {
    * @this {Stack}
    */
 
-  constructor(_stack) {
-    this._stack = [];
+  constructor(stack) {
+    this.stack = [];
   }
 
   /**
@@ -25,7 +25,7 @@ class Stack {
    */
 
   push(value) {
-    this._stack.push(value);
+    this.stack.unshift(value);
   }
 
   /**
@@ -38,7 +38,7 @@ class Stack {
 
   pop() {
     this.isEmptyAssert;
-    return this._stack.shift();
+    return this.stack.shift();
   }
 
   /**
@@ -51,7 +51,7 @@ class Stack {
 
   peek() {
     this.isEmptyAssert;
-    return this._stack[0];  
+    return this.stack[0];  
 }
 
   /**
@@ -64,7 +64,7 @@ class Stack {
    */
 
   isEmpty() {
-    return Boolean(this._stack[0]);
+    return Boolean(this.stack[0]);
   }
 
   /**
@@ -72,11 +72,11 @@ class Stack {
    * 
    * @function
    * @this {Stack}
-   * example stack._isEmptyAssert();
+   * example stack.isEmptyAssert();
    */
 
   _isEmptyAssert() {
-    assert(this._stack[0], 'The stack is empty');
+    assert(this.stack[0], 'The stack is empty');
   }
 
 }
