@@ -19,8 +19,6 @@ class Stack {
    * Adds an element to stack
    * 
    * @function
-   * @this {Stack}
-   * @example push(100500);
    * @param value - value that you wish to put in stack
    */
 
@@ -29,15 +27,14 @@ class Stack {
   }
 
   /**
-   * Removes the first element from stack
+   * Removes the first element from stack and return it
    * 
    * @function
-   * @this {Stack}
-   * @example pop();
+   * @return first element in stack
    */
 
   pop() {
-    this.isEmptyAssert;
+    this.isEmptyAssert();
     return this.stack.shift();
   }
 
@@ -45,12 +42,11 @@ class Stack {
    * Returns the first element in stack
    * 
    * @function
-   * @this {Stack}
-   * @example peek();
+   * @return first element in stack
    */
 
   peek() {
-    this.isEmptyAssert;
+    this.isEmptyAssert();
     return this.stack[0];  
 }
 
@@ -58,25 +54,24 @@ class Stack {
    * Checks if stack is empty
    * 
    * @function
-   * @this {Stack}
-   * @returns true/false
-   * example stack.isEmpty();
+   * @return true/false
    */
 
   isEmpty() {
-    return Boolean(this.stack[0]);
+    if (this.stack.length === 0) {
+      return true
+    }
+    else {
+      return false
+    }
   }
 
   /**
    * Throws if stack is empty
-   * 
-   * @function
-   * @this {Stack}
-   * example stack.isEmptyAssert();
    */
 
-  _isEmptyAssert() {
-    assert(this.stack[0], 'The stack is empty');
+  isEmptyAssert() {
+    assert.notDeepStrictEqual(this.stack.length, 0, 'The stack is empty');
   }
 
 }
