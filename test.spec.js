@@ -116,7 +116,7 @@ describe('isEmptyAssert() testsuite', function() {
 });
 
 describe('Tests with several elements in stack', function() {
-    it('First element should be correct', function() {
+    it('first element should be correct', function() {
         const stack = new Stack;
         stack.push(1);
         stack.push(2);
@@ -125,7 +125,7 @@ describe('Tests with several elements in stack', function() {
         assert.deepStrictEqual(stack.stack[0], 1, 'first element in stack is wrong');
     });
 
-     it('Second element should be correct', function() {
+     it('second element should be correct', function() {
         const stack = new Stack;
         stack.push(1);
         stack.push(2);
@@ -134,7 +134,7 @@ describe('Tests with several elements in stack', function() {
         assert.deepStrictEqual(stack.stack[1], 2, 'second element in stack is wrong');
     });
 
-     it('Third element should be correct', function() {
+     it('third element should be correct', function() {
         const stack = new Stack;
         stack.push(1);
         stack.push(2);
@@ -143,12 +143,12 @@ describe('Tests with several elements in stack', function() {
         assert.deepStrictEqual(stack.stack[2], 3, 'third element in stack is wrong');
     });
 
-    it('Stack length should be correct', function() {
+    it('stack length should be correct', function() {
         const stack = new Stack;
         stack.push(1);
         stack.push(2);
         stack.push(3);
 
-        assert.deepStrictEqual(stack.stack.length, 3, 'Stack length is wrong');
+        assert.deepStrictEqual(stack.stack.length, 3, 'stack length is wrong');
 });
 });
