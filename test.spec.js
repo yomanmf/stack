@@ -4,7 +4,7 @@ const assert = require('assert');
 const Stack = require('./index.js');
 
 describe('Check type of every function', function () {
-    it('stack should use expected API', function() {
+    it('should use expected API', function() {
         assert.strictEqual(typeof Stack, 'function', 'Stack is not a function');
 
         const stack = new Stack;
@@ -17,7 +17,7 @@ describe('Check type of every function', function () {
 });
     
 describe('push() testsuite', function () {
-    it('push() dont throw errors', function () {
+    it('shoudl not throw errors', function () {
         const stack = new Stack;
 
         assert.doesNotThrow(function () {
@@ -46,7 +46,7 @@ describe('peek() testsuite', function () {
 });
 
 describe('pop() testsuite', function () {
-    it('pop() dont throw errors', function() {
+    it('should not throw errors', function() {
         const stack = new Stack;
 
         assert.doesNotThrow(function () {
@@ -77,13 +77,13 @@ describe('isEmpty() testsuite', function() {
         const stack = new Stack;
         stack.push(1);
 
-        assert.deepStrictEqual(stack.isEmpty(), true);
+        assert.deepStrictEqual(stack.isEmpty(), false);
     });
 
     it('should check if stack is empty with isEmpty()', function() {
         const stack = new Stack;
 
-        assert.deepStrictEqual(stack.isEmpty(), false);
+        assert.deepStrictEqual(stack.isEmpty(), true);
     });
 });
 
@@ -96,7 +96,7 @@ describe('isEmptyAssert() testsuite', function() {
         }, /The stack is empty/, 'isEmptyAssert throw when stack is not empty');
     });
 
-    it('dont throw error if stack is empty with isEmptyAssert()', function() {
+    it('should not throw error if stack is empty with isEmptyAssert()', function() {
         const stack = new Stack;
  
         assert.doesNotThrow(function() {
@@ -106,16 +106,16 @@ describe('isEmptyAssert() testsuite', function() {
 });
 
 describe('Tests with several elements in stack', function() {
-    it('first element should be correct', function() {
+    it('should add first element correctly', function() {
         const stack = new Stack;
         stack.push(1);
         stack.push(2);
         stack.push(3);
 
-        assert.deepStrictEqual(stack.stack[0], 1, 'first element in stack is wrong');
+        assert.deepStrictEqual(stack.stack[0], 3, 'first element in stack is wrong');
     });
 
-     it('second element should be correct', function() {
+     it('should add second element correctly', function() {
         const stack = new Stack;
         stack.push(1);
         stack.push(2);
@@ -124,21 +124,19 @@ describe('Tests with several elements in stack', function() {
         assert.deepStrictEqual(stack.stack[1], 2, 'second element in stack is wrong');
     });
 
-     it('third element should be correct', function() {
+     it('should add third element correctly', function() {
         const stack = new Stack;
         stack.push(1);
         stack.push(2);
         stack.push(3);
 
-        assert.deepStrictEqual(stack.stack[2], 3, 'third element in stack is wrong');
+        assert.deepStrictEqual(stack.stack[2], 1, 'third element in stack is wrong');
     });
 
     it('stack length should be correct', function() {
         const stack = new Stack;
         stack.push(1);
-        stack.push(2);
-        stack.push(3);
 
-        assert.deepStrictEqual(stack.stack.length, 3, 'stack length is wrong');
+        assert(stack.isEmpty, 'stack length is wrong');
 });
 });
