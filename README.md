@@ -11,7 +11,7 @@ npm install
 
 # How to run tests
 ```bash
-npm tests
+npm test
 ```
 
 # API
