@@ -38,7 +38,7 @@ class Stack {
 
   pop() {
     this.isEmptyAssert;
-    return this.stack.pop();
+    return this.stack.shift();
   }
 
   /**

@@ -6,30 +6,12 @@ const Stack = require('./index.js');
 describe('Check type of every function', function () {
     it('stack should use expected API', function() {
         assert.strictEqual(typeof Stack, 'function', 'Stack is not a function');
-    });
 
-    it('stack.push should use expected API', function() {
         const stack = new Stack;
         assert.strictEqual(typeof stack.push, 'function', 'stack.push is not a function');
-    });
-
-    it('stack.pop should use expected API', function() {
-        const stack = new Stack;
         assert.strictEqual(typeof stack.pop, 'function', 'stack.pop is not a function');
-    });
-
-    it('stack.peek should use expected API', function() {
-        const stack = new Stack;
         assert.strictEqual(typeof stack.peek, 'function', 'stack.peek is not a function');
-    });
-
-    it('stack.isEmpty should use expected API', function() { 
-        const stack = new Stack;
         assert.strictEqual(typeof stack.isEmpty, 'function', 'stack.isEmpty is not a function');
-    });
-
-    it('stack.isEmptyAssert should use expected API', function() { 
-        const stack = new Stack;
         assert.strictEqual(typeof stack.isEmptyAssert, 'function', 'stack.isEmptyAssert is not a function');
     });
 });
@@ -86,7 +68,7 @@ describe('pop() testsuite', function () {
         stack.push(1);
         stack.push(2);
         stack.push(3);
-        assert.structEqual(stack.pop(), 3);
+        assert.strictEqual(stack.pop(), 3);
     });
 });
 
