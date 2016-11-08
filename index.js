@@ -34,7 +34,7 @@ class Stack {
    */
 
   pop() {
-    this.isEmptyAssert();
+    this._isEmptyAssert();
     return this.stack.shift();
   }
 
@@ -46,7 +46,7 @@ class Stack {
    */
 
   peek() {
-    this.isEmptyAssert();
+    this._isEmptyAssert();
     return this.stack[0];  
 }
 
@@ -70,7 +70,7 @@ class Stack {
    * Throws if stack is empty
    */
 
-  isEmptyAssert() {
+  _isEmptyAssert() {
     assert.notDeepStrictEqual(this.stack.length, 0, 'The stack is empty');
   }
 

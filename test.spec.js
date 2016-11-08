@@ -12,7 +12,7 @@ describe('Check type of every function', function () {
         assert.strictEqual(typeof stack.pop, 'function', 'stack.pop is not a function');
         assert.strictEqual(typeof stack.peek, 'function', 'stack.peek is not a function');
         assert.strictEqual(typeof stack.isEmpty, 'function', 'stack.isEmpty is not a function');
-        assert.strictEqual(typeof stack.isEmptyAssert, 'function', 'stack.isEmptyAssert is not a function');
+        assert.strictEqual(typeof stack._isEmptyAssert, 'function', 'stack._isEmptyAssert is not a function');
     });
 });
     
@@ -87,21 +87,21 @@ describe('isEmpty() testsuite', function() {
     });
 });
 
-describe('isEmptyAssert() testsuite', function() {
-    it('should throw error if stack is empty with isEmptyAssert()', function() {
+describe('_isEmptyAssert() testsuite', function() {
+    it('should throw error if stack is empty with _isEmptyAssert()', function() {
         const stack = new Stack;
 
         assert.throws(function() {
-            stack.isEmptyAssert();
-        }, /The stack is empty/, 'isEmptyAssert throw when stack is not empty');
+            stack._isEmptyAssert();
+        }, /The stack is empty/, '_isEmptyAssert throw when stack is not empty');
     });
 
-    it('should not throw error if stack is empty with isEmptyAssert()', function() {
+    it('should not throw error if stack is empty with _isEmptyAssert()', function() {
         const stack = new Stack;
  
         assert.doesNotThrow(function() {
             stack.push(123);
-        }, 'isEmptyAssert() dont throw when stack is empty');
+        }, '_isEmptyAssert() dont throw when stack is empty');
     });
 });
 
