@@ -30,7 +30,7 @@ describe('push() testsuite', function () {
         const stack = new Stack;
         stack.push(1);
 
-        assert.deepStrictEqual(stack.stack.length, 1, 'stack.length <> 1');
+        assert.deepStrictEqual(stack._stack.length, 1, 'stack.length <> 1');
     });
 
 });
@@ -60,7 +60,7 @@ describe('pop() testsuite', function () {
         stack.push(1);
         stack.pop();
 
-        assert.deepStrictEqual(stack.stack.length, 0, 'stack.stack.length <> 0');
+        assert.deepStrictEqual(stack._stack.length, 0, 'stack.stack.length <> 0');
     });     
 
     it('should act like FIFO data structure', function () {
@@ -112,7 +112,7 @@ describe('Tests with several elements in stack', function() {
         stack.push(2);
         stack.push(3);
 
-        assert.deepStrictEqual(stack.stack[0], 3, 'first element in stack is wrong');
+        assert.deepStrictEqual(stack._stack[0], 3, 'first element in stack is wrong');
     });
 
      it('should add second element correctly', function() {
@@ -121,7 +121,7 @@ describe('Tests with several elements in stack', function() {
         stack.push(2);
         stack.push(3);
 
-        assert.deepStrictEqual(stack.stack[1], 2, 'second element in stack is wrong');
+        assert.deepStrictEqual(stack._stack[1], 2, 'second element in stack is wrong');
     });
 
      it('should add third element correctly', function() {
@@ -130,7 +130,7 @@ describe('Tests with several elements in stack', function() {
         stack.push(2);
         stack.push(3);
 
-        assert.deepStrictEqual(stack.stack[2], 1, 'third element in stack is wrong');
+        assert.deepStrictEqual(stack._stack[2], 1, 'third element in stack is wrong');
     });
 
     it('stack length should be correct', function() {

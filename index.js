@@ -12,7 +12,7 @@ class Stack {
    */
 
   constructor(stack) {
-    this.stack = [];
+    this._stack = [];
   }
 
   /**
@@ -23,7 +23,7 @@ class Stack {
    */
 
   push(value) {
-    this.stack.unshift(value);
+    this._stack.unshift(value);
   }
 
   /**
@@ -35,7 +35,7 @@ class Stack {
 
   pop() {
     this._isEmptyAssert();
-    return this.stack.shift();
+    return this._stack.shift();
   }
 
   /**
@@ -47,7 +47,7 @@ class Stack {
 
   peek() {
     this._isEmptyAssert();
-    return this.stack[0];  
+    return this._stack[0];  
 }
 
   /**
@@ -58,7 +58,7 @@ class Stack {
    */
 
   isEmpty() {
-    if (this.stack.length === 0) {
+    if (this._stack.length === 0) {
       return true
     }
     else {
@@ -71,7 +71,7 @@ class Stack {
    */
 
   _isEmptyAssert() {
-    assert.notDeepStrictEqual(this.stack.length, 0, 'The stack is empty');
+    assert.notDeepStrictEqual(this._stack.length, 0, 'The stack is empty');
   }
 
 }
